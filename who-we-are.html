@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Who we are</title>
+</head>
+<body>
+  <header>
+    <a class="logo" href = "index.html"><img src="task-troopers-high-resolution-logo-white-transparent.png" alt="logo"></a>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="who-we-are.html">WHO WE ARE</a></li>
+    </ul>
+    <div class="mobile-menu">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="mobile-links">
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="who-we-are.html">WHO WE ARE</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
+          </ul>
+      </div>
+    </div>
+    <a class="cta" href="#" onclick="togglePopup()"><button>Contact Us</button></a>
+</header>
+    <h2 id = who-we-are-header>The Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="pfp" src="images/default.png" alt="Matthew" style="width:100%">
+      <div class="container">
+        <h2>Matthew</h2>
+        <p class="title">Database engineer</p>
+        <p class = "email-link"><a style="color: #3333ff;" href="mailto:mh2041@hw.ac.uk">mh2041@hw.ac.uk</a></p>
+      </div>
+    </div>
+    <div class="card">
+        <img class="pfp" src="images/default.png" alt="Nedal" style="width:100%">
+        <div class="container">
+          <h2>Nedal</h2>
+          <p class="title">Front-End engineer</p>
+          <p class = "email-link"><a style="color: #3333ff;" href="mailto:nt2018@hw.ac.uk">nt2019@hw.ac.uk</a></p>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img class="pfp" src="images/default.png" alt="Aengus" style="width:100%">
+      <div class="container">
+        <h2>Aengus</h2>
+        <p class="title">Back-End engineer</p>
+        <p class="email-link"><a style="color: #3333ff;" href="mailto:al2006@hw.ac.uk">al2006@hw.ac.uk</a></p>
+      </div>
+    </div>
+    <div class="card">
+        <img class="pfp" src="images/default.png" alt="Lucas" style="width:100%">
+        <div class="container">
+          <h2>Lucas</h2>
+          <p class="title">UI/UX Designer</p>
+          <p class="email-link"><a style="color: #3333ff;" href="mailto:lm2007@hw.ac.uk">lm2007@hw.ac.uk</a></p>
+        </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="pfp" src="images/default.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Lawson</h2>
+        <p class="title">Back-End engineer</p>
+        <p class="email-link"><a style="color: #3333ff;" href="mailto:ld2011@hw.ac.uk">ld2011@hw.ac.uk</a></p>
+      </div>
+    </div>
+    <div class="card">
+        <img class="pfp" src="images/default.png" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Alexander</h2>
+          <p class="title">Front-End engineer</p>
+          <p class ="email-link"><a style="color: #3333ff;" href="mailto:ar250@hw.ac.uk">ar250@hw.ac.uk</a></p>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img class="pfp" src="images/default.png" alt="Ian" style="width:100%">
+      <div class="container">
+        <h2>Ian</h2>
+        <p class="title">Front-End engineer</p>
+        <p class="email-link"><a style="color: #3333ff;" href="mailto:ij2003@hw.ac.uk">ij2003@hw.ac.uk</a></p>
+      </div>
+  </div> 
+  </div>
+</div>
+    <footer style = "margin-top: 5%;">
+        <p>&copy; 2024 TaskTroopers. All rights reserved.</p>
+    </footer>
+    <div class="overlay" id="overlay">
+      <div class="modal">
+          <span onclick="togglePopup()" class="close-button">&times;</span>
+          <div>
+            <p id="desc">Interested in our services? Or just  got a question? Either way we'd love to hear from you. Fill out this form and we'll get back to you as soon as we can.</p>
+          </div>
+          <section class="enquiry-form">
+              <form action="submit_enquiry.php" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+  
+                  <button class="submit-button" type="submit">Submit Enquiry</button>
+              </form>
+          </section>
+      </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

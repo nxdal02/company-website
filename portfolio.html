@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href = "index.html"><img src="task-troopers-high-resolution-logo-white-transparent.png" alt="logo"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="who-we-are.html">WHO WE ARE</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="mobile-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="who-we-are.html">WHO WE ARE</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="cta" href="#" onclick="togglePopup()"><button>Contact Us</button></a>
+    </header>
+    <div class="container2">
+        <div class="image-description">
+            <img src="collab-nexus-images/Log In.png" alt="Log in page">
+            <p id="desc">Coming soon! Collab Nexus, your collaborative brainstorming haven. This app redefines virtual social spaces, allowing users to interact, organize, and co-create ideas effortlessly. Dive into a dynamic environment where collaboration sparks innovation, reimagining the way ideas come to life. Welcome to a platform where creativity knows no bounds.</p>
+        </div>
+        <div class="image-description">
+            <p id="desc">
+                Welcome to the heart of your digital universe – the Collab Nexus home page. Your personal dashboard is a dynamic hub, showcasing the student and educator groups you're part of.</p>
+            <img src="collab-nexus-images/Dashboard.png" alt="Dashboard">
+        </div>
+
+        <div class="image-description">
+            <img src="collab-nexus-images/Image sharing.png" alt="Student group">
+            <p id="desc">Now onto the Groups Page, where you'll be spending most of your time. Join text channels to discuss ideas with your peers, or set up an event if you prefer doing things in person. The groups page now also includes a drawing tool with the option to share your work with the rest of the group.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TaskTroopers. All rights reserved.</p>
+    </footer>
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <span onclick="togglePopup()" class="close-button">&times;</span>
+            <div>
+                <p id="desc">Interested in our services? Or just  got a question? Either way we'd love to hear from you. Fill out this form and we'll get back to you as soon as we can.</p>
+            </div>
+            <section class="enquiry-form">
+                <form action="submit_enquiry.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+    
+                    <button class="submit-button" type="submit">Submit Enquiry</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

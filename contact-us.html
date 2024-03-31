@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href = "index.html"><img src="task-troopers-high-resolution-logo-white-transparent.png" alt="logo"></a>
+        <div class="mobile-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="mobile-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="who-we-are.html">WHO WE ARE</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="cta" href="#" onclick="togglePopup()"><button>Contact Us</button></a>
+    </header>
+    <section class="contact-form-mobile">
+        <h1>Contact Us</h1>
+        <div>
+            <p id="desc">Interested in our services? Or just  got a question? Either way we'd love to hear from you. Fill out this form and we'll get back to you as soon as we can.</p>
+        </div>
+        <form action="submit_enquiry.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 TaskTroopers. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
